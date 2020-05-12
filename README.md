@@ -23,7 +23,11 @@ However, the unusual circumstances left some vaults with less residual collatera
 
 ## Static webpage
 
-The static webpage will state that, "the claimant agrees to indemnify the protocol against legal action."
+The static webpage will state:
+
+> You acknowledge that risks of vault total loss were well documented in multiple places. Maker governance does not accept liability for any past losses experienced by any vault holder, nor accepts liability for future losses.
+> The present loss compensation is an exceptional circumstance, and should be regarded as a beneficent gesture. Maker governance has **no obligation** to issue any compensation for losses.
+> By accepting compensation, the claimant waives the possibility of future litigation for any vault auction losses that accrued during March 2020.
 
 - This isn't an airtight legal gesture, but it is better than nothing.
-- Vault holders who claim compensation should not be tempted to join as a plaintiff in a class action suit against some facet of Maker.
+- Vault holders who claim compensation should not be tempted to join as a plaintiff in a legal suit against some organization that supports the Maker protocol.
