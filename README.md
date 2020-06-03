@@ -15,10 +15,11 @@ However, the unusual circumstances left some vaults with less residual collatera
 ## Compensation Contract Requirements
 
 - The compensation contract will be created on Ethereum.
-- The contract will store accounts and compensation amounts. Compensation amounts will be stored as proportions of a total compensation. The total compensation amount will be set during contract initialization. This arrangement allows total compensation to be set at the last minute prior to funding the contract. Once the contract is funded, total compensation can no longer be changed.
-- Data will be added to the contract using multiple transactions. There is too much data to load in a single transaction. Once data is loaded, the API to load data will be permanently locked.
-- A MKR executive will fund the contract with the required amount of DAI, setting the total compensation amount.
-- To claim compensation, vault owners will call a no-argument function claim() from a static webpage. The contract will send back the compensation amount to the caller based on the caller's Ethereum address. The caller's address and amount proportion will be erased from the compensation contract.
+- The contract will store accounts and compensation amounts. Compensation amounts will be stored as amounts of DAI.
+- During creation, data will be added to the contract using multiple transactions. There is too much data to load in a single transaction. Once data is loaded, the API to load data will be locked to the contract creator.
+- It shall be possible to continue to add more data using a multisig authorization. The keys in the multisig represent the compensation committee that shall review claims submitted by vault owners who were omitted from the initial compensation class.
+- A MKR executive will fund the contract with the required amount of DAI.
+- To claim compensation, vault owners will call a no-argument function claim() from a static webpage. The contract will send back the compensation amount to the caller based on the caller's Ethereum address. The caller's address and amount shall be erased from the compensation contract.
 - The compensation contract will have a function to transfer any remaining balance back to the surplus account and self-destruct. This function will be callable only by MKR executive.
 
 ## Static webpage
